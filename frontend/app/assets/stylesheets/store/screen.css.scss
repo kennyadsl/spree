@@ -1243,7 +1243,7 @@ table.order-summary {
     }
   }
 
-  aside#sidebar {
+  aside.sidebar {
     text-align: center;
 
     ul {
@@ -1251,17 +1251,6 @@ table.order-summary {
 
       li {
         list-style-type: none;
-      }
-    }
-  }
-
-  ul#products {
-    li {
-      width: 142px;
-      margin-right: 15px;
-
-      &.secondary, &.omega {
-        margin-right: 0;
       }
     }
   }

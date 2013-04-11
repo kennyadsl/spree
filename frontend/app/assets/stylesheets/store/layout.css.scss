@@ -1,0 +1,33 @@
+@import "skeleton";
+
+.main_content {
+  @extend .columns;
+
+  &.with_sidebar    { @extend .twelve }
+  &.without_sidebar { @extend .sixteen }
+}
+
+.sidebar {
+  @extend .columns;
+  @extend .four;
+}
+
+.product-listing .product {
+  @extend .columns;
+  @extend .three;
+
+  &.first   { @extend .alpha }
+  // &.second  { }
+  // &.third   { }
+  &.fourth  { @extend .omega }
+}
+
+@media only screen and (max-width: 479px) {
+
+  #products.product-listing .product {
+    width: 142px;
+    margin-right: 15px;
+
+    &.second, &.fourth { margin-right: 0}
+  }
+}
