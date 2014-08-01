@@ -13,13 +13,13 @@
 
       <%= render :partial => 'spree/shared/header' %>
 
-      <div id="wrapper" class="row" data-hook>
+      <div id="wrapper" class="main-wrapper" data-hook>
 
         <%= breadcrumbs(@taxon) %>
 
         <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
 
-        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
+        <div id="content" class="main-content <%= !content_for?(:sidebar) ? "without-sidebar" : "with-sidebar" %>" data-hook>
           <%= flash_messages %>
           <%= yield %>
         </div>
