@@ -21,6 +21,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_api', version
   s.add_dependency 'spree_core', version
 
+  s.add_dependency 'bourbon', '~> 3.2.3'
+  s.add_dependency 'neat', '~> 1.5.1'
+
   s.add_dependency 'canonical-rails', '~> 0.0.4'
   s.add_dependency 'jquery-rails', '3.1.0' # Locked down because 3.1.1 breaks data-confirm https://github.com/spree/spree/pull/4892
   s.add_dependency 'stringex', '~> 1.5.1'

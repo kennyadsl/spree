@@ -1,0 +1,163 @@
+@import 'bourbon';
+@import 'neat/grid-settings';
+@import 'neat';
+
+.main-wrapper {
+  @include outer-container;
+
+  .main-sidebar {
+    @include span-columns(4);
+  }
+
+  .main-content {
+    @include omega;
+
+    &.without-sidebar {
+      @include span-columns(16);
+    }
+
+    &.with-sidebar{
+      @include span-columns(12);
+    }
+  }
+}
+
+.main-footer {
+  @include outer-container;
+
+  .main-footer-left {
+    @include span-columns(8);
+  }
+
+  .main-footer-right {
+    @include span-columns(8);
+    @include omega;
+  }
+}
+
+.main-header {
+  @include outer-container;
+
+  .main-header-logo {
+    @include span-columns(6);
+  }
+
+  .main-header-top-nav-bar {
+    @include span-columns(10);
+    @include omega;
+  }
+
+  .main-header-nav-bar {
+    @include span-columns(16);
+    @include omega;
+  }
+}
+
+/* Product listing */
+.product-listing-item {
+  @include span-columns(3 of 12);
+
+  &.fourth {
+    @include omega;
+  }
+}
+
+/* Product page */
+.product-details {
+  @include outer-container;
+
+  .product-details-left-part {
+    @include span-columns(6);
+  }
+
+  .product-details-right-part {
+    @include span-columns(10);
+    @include omega;
+
+    .product-variants {
+      @include span-columns(5 of 10);
+    }
+
+    .product-price {
+      @include span-columns(5 of 10);
+
+      &.with-variants {
+        @include omega;
+      }
+    }
+
+    .taxon-crumbs {
+      @include span-columns(5 of 10);
+    }
+  }
+}
+
+
+/* Checkout */
+.checkout-header {
+  @include outer-container;
+
+  .checkout-header-title {
+    @include span-columns(3);
+  }
+
+  .checkout-header-progress {
+    @include span-columns(13);
+    @include omega;
+  }
+}
+
+.checkout-content {
+  @include outer-container;
+
+  .checkout-content-wrapper {
+    &.with-summary {
+      @include span-columns(12);
+    }
+
+    &.without-summary {
+      @include span-columns(16);
+      @include omega;
+    }
+  }
+
+  .checkout-content-summary {
+    @include span-columns(4);
+    @include omega;
+  }
+}
+
+/* Order Page */
+.steps-data {
+  @include outer-container;
+
+  .steps-data-bill-address {
+    @include span-columns(4);
+  }
+
+  .steps-data-ship-address {
+    @include span-columns(4);
+  }
+
+  .steps-data-delivery {
+    @include span-columns(4);
+  }
+
+  .steps-data-payment {
+    @include span-columns(4);
+  }
+}
+
+.order-details-table {
+  @include span-columns(16);
+}
+
+/* Address */
+.billing-fieldset-wrapper {
+  @include span-columns(6 of 12);
+}
+
+.shipping-fieldset-wrapper {
+  @include span-columns(6 of 12);
+  @include omega;
+}

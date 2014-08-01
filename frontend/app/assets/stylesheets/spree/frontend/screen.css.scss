@@ -5,6 +5,7 @@
 //= depend_on_asset "spree/frontend/cart.png"
 
 @import 'spree/frontend/variables';
+@import 'spree/frontend/layout';
 @import 'font-awesome';
 
 /*--------------------------------------*/
@@ -991,7 +992,7 @@ div[data-hook="inside_cart_form"] {
 
 .adjustment:nth-child(even) {
   background: #eaeaea;
-  
+
 }
 
 /*--------------------------------------*/
